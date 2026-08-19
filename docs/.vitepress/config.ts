@@ -1,44 +1,59 @@
 import { defineConfig } from 'vitepress'
 
+const REPO = 'https://github.com/StrawCoding/StrawMoneyBook'
+
 export default defineConfig({
-  title: 'StrawMoneyBook Wiki',
-  description: 'Official technical operation wiki for StrawMoneyBook',
+  title: 'StrawMoneyBook',
+  titleTemplate: ':title | Developer Guide',
+  description: 'StrawMoneyBook 官方開發者技術文件：架構、模組協作與功能域指南',
   lang: 'zh-Hant',
   base: '/StrawMoneyBookWiki/',
   lastUpdated: true,
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Local Dev', link: '/local-dev-quickstart' },
-      { text: 'Testing', link: '/testing-and-verification' },
-      { text: 'Troubleshooting', link: '/troubleshooting' }
+      { text: 'Guide', link: '/' },
+      { text: 'Architecture', link: '/architecture/overview' },
+      { text: 'Domains', link: '/domains/bookkeeping' },
+      { text: 'GitHub', link: REPO }
     ],
     sidebar: [
       {
-        text: 'Getting Started',
+        text: 'Introduction',
         items: [
-          { text: 'Home', link: '/' },
-          { text: 'Local Dev Quickstart', link: '/local-dev-quickstart' },
-          { text: 'Environment Variables', link: '/environment-variables' }
+          { text: 'What is StrawMoneyBook?', link: '/' },
+          { text: 'Quick Start', link: '/quick-start' }
         ]
       },
       {
-        text: 'Development',
+        text: 'Architecture',
         items: [
-          { text: 'Testing and Verification', link: '/testing-and-verification' },
-          { text: 'Troubleshooting', link: '/troubleshooting' }
+          { text: 'Overview', link: '/architecture/overview' },
+          { text: 'Application Layers', link: '/architecture/application-layers' },
+          { text: 'Startup & Runtime', link: '/architecture/startup-and-runtime' },
+          { text: 'Ledger Lifecycle', link: '/architecture/ledger-lifecycle' }
         ]
       },
       {
-        text: 'Operations',
+        text: 'Core Guide',
         items: [
-          { text: 'CI CD and Gates', link: '/ci-cd-and-gates' },
-          { text: 'Release Process', link: '/release-process' },
-          { text: 'Android Release and Play Upload', link: '/android-release-and-play-upload' },
-          { text: 'Backend Deployment and Health', link: '/backend-deployment-and-health' },
-          { text: 'Backups and Restore', link: '/backups-and-restore' },
-          { text: 'Auth and Security Operations', link: '/auth-and-security-operations' },
-          { text: 'Sync Operations Runbooks', link: '/sync-operations-runbooks' }
+          { text: 'Data Model & Storage', link: '/guide/data-model-and-storage' },
+          { text: 'Frontend Stack', link: '/guide/frontend-stack' },
+          { text: 'Backend API', link: '/guide/backend-api' },
+          { text: 'Authentication', link: '/guide/authentication' }
+        ]
+      },
+      {
+        text: 'Feature Domains',
+        items: [
+          { text: 'Bookkeeping', link: '/domains/bookkeeping' },
+          { text: 'Budget', link: '/domains/budget' },
+          { text: 'Assets', link: '/domains/assets' },
+          { text: 'Loans, Reimbursements & Claims', link: '/domains/loans-reimbursements-claims' },
+          { text: 'Analysis & Reports', link: '/domains/analysis-reports' },
+          { text: 'Sync, Backup & Shared Ledger', link: '/domains/sync-backup-shared-ledger' },
+          { text: 'Membership', link: '/domains/membership' },
+          { text: 'Bank Sync & E-Invoice', link: '/domains/bank-sync-einvoice' },
+          { text: 'Android & Capacitor', link: '/domains/android-capacitor' }
         ]
       }
     ],
@@ -46,8 +61,11 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/StrawCoding/StrawMoneyBookWiki' }
     ],
     footer: {
-      message: 'StrawMoneyBook Official Technical Wiki',
+      message: 'StrawMoneyBook Developer Guide',
       copyright: 'Copyright © StrawCoding'
+    },
+    search: {
+      provider: 'local'
     }
   }
 })
