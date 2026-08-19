@@ -1,3 +1,9 @@
+---
+layout: default
+title: CI-CD-And-Gates
+permalink: /CI-CD-And-Gates/
+---
+
 # CI-CD-And-Gates
 
 ## 目的

@@ -1,3 +1,9 @@
+---
+layout: default
+title: Auth-And-Security-Operations
+permalink: /Auth-And-Security-Operations/
+---
+
 # Auth-And-Security-Operations
 
 ## 目的

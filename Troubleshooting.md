@@ -1,3 +1,9 @@
+---
+layout: default
+title: Troubleshooting
+permalink: /Troubleshooting/
+---
+
 # Troubleshooting
 
 ## 目的

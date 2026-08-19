@@ -1,3 +1,9 @@
+---
+layout: default
+title: Release-Process
+permalink: /Release-Process/
+---
+
 # Release-Process
 
 ## 目的

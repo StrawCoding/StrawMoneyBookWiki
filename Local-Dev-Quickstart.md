@@ -1,3 +1,9 @@
+---
+layout: default
+title: Local-Dev-Quickstart
+permalink: /Local-Dev-Quickstart/
+---
+
 # Local-Dev-Quickstart
 
 ## 目的

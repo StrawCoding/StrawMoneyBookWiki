@@ -1,3 +1,9 @@
+---
+layout: default
+title: Home
+permalink: /Home/
+---
+
 # Home
 
 這是一套「官方技術操作 Wiki」（Runbook / How-to），目標是讓維護者可以依照固定流程完成：

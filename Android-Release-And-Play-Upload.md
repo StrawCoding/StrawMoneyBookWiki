@@ -1,3 +1,9 @@
+---
+layout: default
+title: Android-Release-And-Play-Upload
+permalink: /Android-Release-And-Play-Upload/
+---
+
 # Android-Release-And-Play-Upload
 
 ## 目的
