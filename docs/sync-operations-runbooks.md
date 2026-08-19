@@ -1,9 +1,3 @@
----
-layout: default
-title: Sync-Operations-Runbooks
-permalink: /Sync-Operations-Runbooks/
----
-
 # Sync-Operations-Runbooks
 
 ## 目的
@@ -27,7 +21,7 @@ permalink: /Sync-Operations-Runbooks/
 - 對應腳本：`frontend/scripts/playwright-carrier-sync-settings.mjs`
 
 #### 需要特別留意的環境變數（治本優先）
-- bank-sync 入口/可用性診斷常受 `VITE_BANK_SYNC_FEATURE_ENABLED` 等 feature flag 影響（見：[`Environment-Variables`](Environment-Variables)）
+- bank-sync 入口/可用性診斷常受 `VITE_BANK_SYNC_FEATURE_ENABLED` 等 feature flag 影響（見：[`Environment-Variables`](/environment-variables)）
 
 ## 驗證與處理原則（避免治標）
 - 一律先確認「可用性診斷」顯示的錯誤碼屬於哪一類（而非只看 UI 總結）
@@ -35,7 +29,6 @@ permalink: /Sync-Operations-Runbooks/
 - 若錯誤碼涉及憑證缺失：只沿用專案既有 recovery CTA，不自行跳過任何閘門
 
 ## 引用來源
-- [`docs/google-backend-auth.md`](../google-backend-auth.md)
-- Playwright bank sync：[`frontend/scripts/playwright-bank-sync-settings.mjs`](../../frontend/scripts/playwright-bank-sync-settings.mjs)
-- Playwright carrier sync：[`frontend/scripts/playwright-carrier-sync-settings.mjs`](../../frontend/scripts/playwright-carrier-sync-settings.mjs)
-
+- [`docs/google-backend-auth.md`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/docs/google-backend-auth.md)
+- Playwright bank sync：[`frontend/scripts/playwright-bank-sync-settings.mjs`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/frontend/scripts/playwright-bank-sync-settings.mjs)
+- Playwright carrier sync：[`frontend/scripts/playwright-carrier-sync-settings.mjs`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/frontend/scripts/playwright-carrier-sync-settings.mjs)

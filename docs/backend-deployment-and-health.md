@@ -1,9 +1,3 @@
----
-layout: default
-title: Backend-Deployment-And-Health
-permalink: /Backend-Deployment-And-Health/
----
-
 # Backend-Deployment-And-Health
 
 ## 目的
@@ -37,7 +31,6 @@ native binding（例如 `better-sqlite3`）同時受 Node ABI 與 libc 影響；
 - 參考 native 安裝治本說明：`backend/scripts/deploy-production-install.mjs`
 
 ## 引用來源
-- [`backend/package.json`](../../backend/package.json)
-- [`backend/scripts/deploy-production-install.mjs`](../../backend/scripts/deploy-production-install.mjs)
-- [`./.github/workflows/ci.yml`](../../.github/workflows/ci.yml)
-
+- [`backend/package.json`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/backend/package.json)
+- [`backend/scripts/deploy-production-install.mjs`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/backend/scripts/deploy-production-install.mjs)
+- [`./.github/workflows/ci.yml`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/.github/workflows/ci.yml)

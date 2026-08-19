@@ -1,16 +1,10 @@
----
-layout: default
-title: Auth-And-Security-Operations
-permalink: /Auth-And-Security-Operations/
----
-
 # Auth-And-Security-Operations
 
 ## 目的
 整理後端登入/權限整合的「操作型」規格與安全政策，避免在 debug/部署時因憑證/secret 誤用造成安全風險或不可用。
 
 ## 登入架構（Google / Email / Refresh rotation）
-- 主方案：[`docs/google-backend-auth.md`](../google-backend-auth.md)
+- 主方案：[`docs/google-backend-auth.md`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/docs/google-backend-auth.md)
 
 後端主要端點（運維/串接用）：
 - `POST /api/auth/google/prepare`：取得一次性 nonce（目的：login/link）
@@ -30,7 +24,6 @@ permalink: /Auth-And-Security-Operations/
 - 安全漏洞走私下回報（依 SECURITY.md）
 
 ## 引用來源
-- [`docs/google-backend-auth.md`](../google-backend-auth.md)
-- [`SECURITY.md`](../../SECURITY.md)
-- [`CONTRIBUTING.md`](../../CONTRIBUTING.md)
-
+- [`docs/google-backend-auth.md`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/docs/google-backend-auth.md)
+- [`SECURITY.md`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/SECURITY.md)
+- [`CONTRIBUTING.md`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/CONTRIBUTING.md)

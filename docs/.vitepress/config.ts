@@ -9,35 +9,45 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Core Guides', link: '/local-dev-quickstart' }
+      { text: 'Local Dev', link: '/local-dev-quickstart' },
+      { text: 'Testing', link: '/testing-and-verification' },
+      { text: 'Troubleshooting', link: '/troubleshooting' }
     ],
     sidebar: [
       {
-        text: 'Core Guides',
+        text: 'Getting Started',
         items: [
           { text: 'Home', link: '/' },
           { text: 'Local Dev Quickstart', link: '/local-dev-quickstart' },
+          { text: 'Environment Variables', link: '/environment-variables' }
+        ]
+      },
+      {
+        text: 'Development',
+        items: [
           { text: 'Testing and Verification', link: '/testing-and-verification' },
           { text: 'Troubleshooting', link: '/troubleshooting' }
         ]
       },
       {
-        text: 'Others (Legacy Markdown)',
+        text: 'Operations',
         items: [
-          { text: 'Environment Variables', link: '/legacy/Environment-Variables' },
-          { text: 'CI CD and Gates', link: '/legacy/CI-CD-And-Gates' },
-          { text: 'Release Process', link: '/legacy/Release-Process' },
-          { text: 'Android Release and Play Upload', link: '/legacy/Android-Release-And-Play-Upload' },
-          { text: 'Backend Deployment and Health', link: '/legacy/Backend-Deployment-And-Health' },
-          { text: 'Backups and Restore', link: '/legacy/Backups-And-Restore' },
-          { text: 'Auth and Security Operations', link: '/legacy/Auth-And-Security-Operations' },
-          { text: 'Sync Operations Runbooks', link: '/legacy/Sync-Operations-Runbooks' }
+          { text: 'CI CD and Gates', link: '/ci-cd-and-gates' },
+          { text: 'Release Process', link: '/release-process' },
+          { text: 'Android Release and Play Upload', link: '/android-release-and-play-upload' },
+          { text: 'Backend Deployment and Health', link: '/backend-deployment-and-health' },
+          { text: 'Backups and Restore', link: '/backups-and-restore' },
+          { text: 'Auth and Security Operations', link: '/auth-and-security-operations' },
+          { text: 'Sync Operations Runbooks', link: '/sync-operations-runbooks' }
         ]
       }
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/StrawCoding/StrawMoneyBookWiki' }
-    ]
+    ],
+    footer: {
+      message: 'StrawMoneyBook Official Technical Wiki',
+      copyright: 'Copyright © StrawCoding'
+    }
   }
 })
-

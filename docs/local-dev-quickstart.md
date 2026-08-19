@@ -1,55 +1,43 @@
-# Local Dev Quickstart
+# Local-Dev-Quickstart
 
 ## 目的
+讓維護者可以在本機快速完成：環境安裝、前端/後端啟動、以及常用檢查指令。
 
-讓維護者可快速完成本機開發與驗證循環：安裝、啟動、測試。
+## 適用範圍
+- 開發中功能/修 bug（前端 Vue、後端 Node）
+- 需要本機測試（Node test、Vite build、Playwright suite）
 
-## 需求
-
-- Node.js（建議與專案既有版本一致）
-- npm
-
-## 安裝
-
+## 操作流程（快速）
+### 1) 安裝依賴
 ```bash
 npm install
 npm install --prefix frontend
 npm install --prefix backend
 ```
 
-## 啟動
-
-前端（預設 API 設定依專案 env）：
-
+### 2) 啟動
+預設連正式後端 API（`https://api.strawmb.com`）：
 ```bash
 npm run dev:frontend
 ```
 
-後端：
-
+若要改打本機後端（`8787`）：
+1. 修改 `frontend/.env.development.local`（覆寫 `VITE_SHARED_LEDGER_API_BASE_URL` 與其餘 `VITE_*_API_BASE_URL`）
+2. 啟動後端：
 ```bash
 npm run dev:backend
 ```
 
-::: tip 本機開發建議
-若只修改前端 UI，先跑前端 dev + 對應測試，可縮短回饋迴圈。
-:::
-
-## 常用檢查
-
+### 3) 常用檢查
 ```bash
-npm run test:node --prefix frontend
-npm run build:web --prefix frontend
+npm run test --silent
+npm run check --silent
 ```
+（若只要前端 Node 測試：`npm run test:node --prefix frontend`）
 
-## 常見問題
+## 常見失敗與處理（先用這些定位）
+- 啟動時打到正式 API：確認 `.env.development*` 是否有正確覆寫（見「Environment-Variables」）
+- 測試失敗：優先看 `frontend/test/*.test.js` 對應來源測試與其期望結構
 
-### 啟動成功但 API 行為不對
-
-- 先檢查前端本機環境變數是否覆寫了 API base URL。
-- 再檢查後端是否啟動在預期埠。
-
-### 測試過但 build 失敗
-
-- 優先檢查路由/匯入路徑、環境變數使用與動態 import。
-
+## 引用來源
+- [`README.md`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/README.md)

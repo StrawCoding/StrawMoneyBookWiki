@@ -1,9 +1,3 @@
----
-layout: default
-title: Environment-Variables
-permalink: /Environment-Variables/
----
-
 # Environment-Variables
 
 ## 目的
@@ -17,8 +11,8 @@ permalink: /Environment-Variables/
 - 需要 debug/觀察 bank-sync/載具同步行為時
 
 ## 你要使用的檔案
-- 前端範本：[`frontend/.env.example`](../../frontend/.env.example)
-- 後端範本：[`backend/.env.example`](../../backend/.env.example)
+- 前端範本：[`frontend/.env.example`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/frontend/.env.example)
+- 後端範本：[`backend/.env.example`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/backend/.env.example)
 - 本機調試覆寫：通常用 gitignored 的「覆寫檔」或「自建 local env」
 
 ## 前端（VITE_*）重點
@@ -28,7 +22,7 @@ permalink: /Environment-Variables/
 2. Google Oauth / e-invoice 相關配置
 3. Debug-only：僅在 DEV/debug 開啟 console trace（不建議上線後依賴）
 
-常見（依 [`frontend/.env.example`](../../frontend/.env.example)）：
+常見（依 [`frontend/.env.example`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/frontend/.env.example)）：
 - `VITE_SHARED_LEDGER_API_BASE_URL`：shared ledger/共同帳本後端 API base URL
 - `VITE_GOOGLE_WEB_CLIENT_ID`：Google Sign-In 的 Web client id
 - `VITE_BANK_SYNC_FEATURE_ENABLED`：bank-sync 入口是否顯示（Feature flag）
@@ -45,7 +39,7 @@ permalink: /Environment-Variables/
 3. Google Oauth client secret（必要時）
 4. 銀行/載具同步的 client shared key（fail-closed 用）
 
-常見（依 [`backend/.env.example`](../../backend/.env.example)）：
+常見（依 [`backend/.env.example`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/backend/.env.example)）：
 - `HOST` / `PORT`：後端监听設定（預設 `HOST=0.0.0.0`、`PORT=8787`）
 - `SHARED_LEDGER_DB_FILE`：collab-store sqlite 檔案位置
 - `GOOGLE_AUTH_WEB_CLIENT_ID`、`GOOGLE_OAUTH_CLIENT_SECRET`：Google OAuth 設定
@@ -54,11 +48,10 @@ permalink: /Environment-Variables/
 - SMTP：`SMTP_SERVER` / `SMTP_USER` / `SMTP_PASS` 等（密碼不要提交）
 
 ## 安全規範（避免知識漂移）
-- 不提交 `.env`、`key.properties`、`.jks` 等密鑰檔（詳見 [`CONTRIBUTING.md`](../../CONTRIBUTING.md)）
+- 不提交 `.env`、`key.properties`、`.jks` 等密鑰檔（詳見 [`CONTRIBUTING.md`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/CONTRIBUTING.md)）
 - Wiki 只描述「變數用途/必填/預期行為」，不收錄真實 secret 值
 
 ## 引用來源
-- [`frontend/.env.example`](../../frontend/.env.example)
-- [`backend/.env.example`](../../backend/.env.example)
-- [`CONTRIBUTING.md`](../../CONTRIBUTING.md)
-
+- [`frontend/.env.example`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/frontend/.env.example)
+- [`backend/.env.example`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/backend/.env.example)
+- [`CONTRIBUTING.md`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/CONTRIBUTING.md)

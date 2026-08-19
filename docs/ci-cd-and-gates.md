@@ -1,16 +1,10 @@
----
-layout: default
-title: CI-CD-And-Gates
-permalink: /CI-CD-And-Gates/
----
-
 # CI-CD-And-Gates
 
 ## 目的
 把 GitHub Actions 的「自動門檻」與重要副流程（Playwright suites、release sync-check、Android unit tests）整理成可對照的 Runbook。
 
 ## 主要資料來源
-- [`./.github/workflows/ci.yml`](../../.github/workflows/ci.yml)
+- [`./.github/workflows/ci.yml`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/.github/workflows/ci.yml)
 
 ## 關鍵 Gate（對照表）
 ### Backend
@@ -57,5 +51,4 @@ CI=true PLAYWRIGHT_BROWSERS_PATH=../backend/.server-data/playwright-browsers npm
 CI 內分別跑多個 workflow jobs（例如：`playwright:ui-layout`、`playwright:budget-save`、`playwright:carrier-sync`、`playwright:analysis-export` 等）。
 
 ## 引用來源
-- [`./.github/workflows/ci.yml`](../../.github/workflows/ci.yml)
-
+- [`./.github/workflows/ci.yml`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/.github/workflows/ci.yml)

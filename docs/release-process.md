@@ -1,18 +1,12 @@
----
-layout: default
-title: Release-Process
-permalink: /Release-Process/
----
-
 # Release-Process
 
 ## 目的
 描述專案的版本/發佈流程、以及如何避免「程式碼推上了但 Release/Tag 沒跟上」的治本閘門。
 
 ## 發佈前置（你要對照的文件）
-- 發版門檻：[`docs/release-checklist.md`](../release-checklist.md)
-- Pending release notes：[`release-notes.pending.md`](../../release-notes.pending.md)
-- Release sync-check：[`frontend/scripts/release-sync-check.mjs`](../../frontend/scripts/release-sync-check.mjs)
+- 發版門檻：[`docs/release-checklist.md`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/docs/release-checklist.md)
+- Pending release notes：[`release-notes.pending.md`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/release-notes.pending.md)
+- Release sync-check：[`frontend/scripts/release-sync-check.mjs`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/frontend/scripts/release-sync-check.mjs)
 
 ## 典型 Release 流程（概念）
 1. 確保變更都對應測試與 Playwright 驗收（見 `Testing-And-Verification`）
@@ -41,8 +35,7 @@ npm run gpr:minor
 - `release-notes.pending.md` 結構錯誤或 pending 內容不符 gate 條件
 
 ## 引用來源
-- [`docs/release-checklist.md`](../release-checklist.md)
-- [`release-notes.pending.md`](../../release-notes.pending.md)
-- [`frontend/scripts/release-sync-check.mjs`](../../frontend/scripts/release-sync-check.mjs)
-- [`frontend/package.json`](../../frontend/package.json)
-
+- [`docs/release-checklist.md`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/docs/release-checklist.md)
+- [`release-notes.pending.md`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/release-notes.pending.md)
+- [`frontend/scripts/release-sync-check.mjs`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/frontend/scripts/release-sync-check.mjs)
+- [`frontend/package.json`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/frontend/package.json)

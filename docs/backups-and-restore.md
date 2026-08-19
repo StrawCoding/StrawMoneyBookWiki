@@ -1,9 +1,3 @@
----
-layout: default
-title: Backups-And-Restore
-permalink: /Backups-And-Restore/
----
-
 # Backups-And-Restore
 
 ## 目的
@@ -31,6 +25,5 @@ permalink: /Backups-And-Restore/
 > 原則：不要在 API 還持有檔案時做 Restore；也不要把 `SHARED_LEDGER_DB_FILE` 直接指向備份檔原地覆寫（避免下一輪備份 prune 把「活檔」一起刪掉）。
 
 ## 引用來源
-- [`docs/backup-strategy.md`](../backup-strategy.md)
-- [`docs/google-backend-auth.md`](../google-backend-auth.md)（若還原後涉及驗證/授權排查）
-
+- [`docs/backup-strategy.md`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/docs/backup-strategy.md)
+- [`docs/google-backend-auth.md`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/docs/google-backend-auth.md)（若還原後涉及驗證/授權排查）
