@@ -36,7 +36,11 @@ flowchart LR
 | Repo | [`bank-sync.repo.js`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/frontend/src/core/repositories/bank-sync.repo.js) |
 | 憑證加密 | [`secure-setting.service.js`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/frontend/src/ui/services/secure-setting.service.js) |
 
-第一銀行自動登入目前僅 **Android 原生**；Web 不提供靜默導回。
+第一銀行自動登入目前僅 **Android 原生**；Web 不提供靜默導回。改 FirstBank／華南 Java **必須重建 APK**。
+
+`isEInvoiceApiConfigured()` 必須同時有 API base **與** client key；非 web／PROD 無 key 不得再回 true。
+
+`playwright:bank-sync` **已納入 CI**。第一銀行 Phase 0C 真機 overlap、華南 H1/H2 登入後 DOM **尚未**用真機證明。見 [Sync Architecture B](/operations/sync-architecture-b)、[Native Bank APK](/operations/android-native-bank-apk)。
 
 架構審計文件：[`docs/audits/bank-sync-20260816/`](https://github.com/StrawCoding/StrawMoneyBook/tree/main/docs/audits/bank-sync-20260816)
 

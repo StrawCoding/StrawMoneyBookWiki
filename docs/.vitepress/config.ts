@@ -14,6 +14,7 @@ export default defineConfig({
       { text: 'Guide', link: '/' },
       { text: 'Architecture', link: '/architecture/overview' },
       { text: 'Domains', link: '/domains/bookkeeping' },
+      { text: 'Operations', link: '/operations/' },
       { text: 'GitHub', link: REPO }
     ],
     sidebar: [
@@ -54,6 +55,31 @@ export default defineConfig({
           { text: 'Membership', link: '/domains/membership' },
           { text: 'Bank Sync & E-Invoice', link: '/domains/bank-sync-einvoice' },
           { text: 'Android & Capacitor', link: '/domains/android-capacitor' }
+        ]
+      },
+      {
+        text: 'Operations',
+        items: [
+          { text: 'Home', link: '/operations/' },
+          { text: 'Optimization Plan', link: '/operations/optimization-plan' },
+          { text: 'Local Dev', link: '/operations/local-dev-quickstart' },
+          { text: 'Environment Variables', link: '/operations/environment-variables' },
+          { text: 'Closeout & Versioning', link: '/operations/closeout-and-versioning' },
+          { text: 'Long-Task Worker', link: '/operations/long-task-worker' },
+          { text: 'Playwright App Shell', link: '/operations/playwright-app-shell' },
+          { text: 'Testing', link: '/operations/testing-and-verification' },
+          { text: 'CI / CD Gates', link: '/operations/ci-cd-and-gates' },
+          { text: 'Release Process', link: '/operations/release-process' },
+          { text: 'Android Play Upload', link: '/operations/android-release-and-play-upload' },
+          { text: 'Native Bank APK', link: '/operations/android-native-bank-apk' },
+          { text: 'Payroll Cycle Budget', link: '/operations/payroll-cycle-budget' },
+          { text: 'Wear Companion', link: '/operations/wear-companion' },
+          { text: 'Sync Architecture B', link: '/operations/sync-architecture-b' },
+          { text: 'Sync Runbooks', link: '/operations/sync-operations-runbooks' },
+          { text: 'Backend Deploy', link: '/operations/backend-deployment-and-health' },
+          { text: 'Backups & Restore', link: '/operations/backups-and-restore' },
+          { text: 'Auth & Security', link: '/operations/auth-and-security-operations' },
+          { text: 'Troubleshooting', link: '/operations/troubleshooting' }
         ]
       }
     ],

@@ -51,7 +51,10 @@ flowchart TB
 - 獨立 `:wear` Compose 模組 + Tile
 - MessageClient `/smb/v1/*` nearby-first，寫入同一 SQLCipher DB（不經 WebView）
 - Room outbox v2；Wear Compose **1.6.2**（禁 1.4.x + targetSdk≥35 閃退）
-- Play 測試 / 正式分軌上傳（phone + wear 各一 AAB）
+- Play 測試 / 正式分軌上傳（phone + wear 各一 AAB）；預設測試軌道 **internal**（未拍板不改 `play-testing-channel.json`）
+- 長表單 route 使用 `meta.hideAppChrome`（quick-add、報表列印等），BottomNav 不遮 CTA
+
+詳見 [Wear Companion](/operations/wear-companion)、[Playwright App Shell](/operations/playwright-app-shell)。
 
 ## 安全與 UX
 

@@ -47,6 +47,8 @@ App resume / focus 時重新載入目前期間，避免跨發薪日 stale period
 
 UI 入口：[`budgeting.vue`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/frontend/src/ui/views/budgeting.vue)（路由 `/budget`）
 
+預算頁**本體**有帳本層「曆月／發薪週期」入口（`budget-page-period-settings`），不必先開項目 sheet。PostSetup 文案指向底部導覽「功能 → 進階功能」。操作細節見 [Payroll Cycle Budget](/operations/payroll-cycle-budget)。
+
 ## 與首頁的協作
 
 首頁預算簡表與 [`useHomePeriodFilter.js`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/frontend/src/ui/composables/useHomePeriodFilter.js) 同步：

@@ -12,6 +12,9 @@ hero:
     - theme: alt
       text: Architecture
       link: /architecture/overview
+    - theme: alt
+      text: Operations
+      link: /operations/
 
 features:
   - title: 架構優先
@@ -28,7 +31,8 @@ features:
 2. [Architecture Overview](/architecture/overview) — 系統邊界與技術棧
 3. [Application Layers](/architecture/application-layers) — 分層與依賴方向
 4. [Feature Domains](/domains/bookkeeping) — 依業務域深入
+5. [Operations](/operations/) — closeout、Playwright、APK、發薪週期、銀行真機閘
 
 ::: tip 與產品文件的差異
-本 wiki 聚焦**程式架構與模組協作**。產品能力詳述見主 repo 的 [`StrawMoneyBook_App_Features_Detailed.md`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/StrawMoneyBook_App_Features_Detailed.md)；檔案對照表見 [`StrawMoneyBook_Features_Map.md`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/frontend/StrawMoneyBook_Features_Map.md)。
+本 wiki 分兩層：**Guide / Architecture / Domains** 講程式架構與模組協作；**Operations** 講發版、測試、部署與同步 runbook。產品能力詳述見主 repo 的 [`StrawMoneyBook_App_Features_Detailed.md`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/StrawMoneyBook_App_Features_Detailed.md)；檔案對照表見 [`StrawMoneyBook_Features_Map.md`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/frontend/StrawMoneyBook_Features_Map.md)。
 :::

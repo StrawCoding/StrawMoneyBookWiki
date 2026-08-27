@@ -43,14 +43,16 @@ PDF 產生：html2canvas + jsPDF，檔名 `交易報表_YYYY-MM.pdf`；擷取前
 
 | 模組 | 職責 |
 |---|---|
-| [`transaction-query.service.js`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/frontend/src/core/services/transaction-query.service.js) | 期間內交易查詢（含 chunked + 讓出主執行緒） |
-| [`analysis-breakdown.js`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/frontend/src/core/utils/analysis-breakdown.js) | 圓餅 / 長條 / 日別 breakdown 計算 |
+| [`transaction-query.service.js`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/frontend/src/core/services/transaction-query.service.js) | `loadAnalysisStats()` SQL `GROUP BY`；明細仍走 `listTransactionsForAnalysis` |
+| [`analysis-breakdown.js`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/frontend/src/core/utils/analysis-breakdown.js) | 圓餅 / 長條列裝飾、附加項目拆分 overlay |
 | [`export.service.js`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/frontend/src/core/services/export.service.js) | CSV / Spreadsheet / 報表資料 |
 
 ## 查詢效能
 
-- 首頁 / 搜尋 / 帳戶明細：SQL **分頁 300 筆**，badge 顯示總筆數
-- 分析「全部」範圍：chunked 載入 + 讓出主執行緒，避免大型帳本卡 UI
+- 首頁 / 搜尋 / 帳戶明細：SQL **分頁 300 筆**，badge 顯示總筆數；長列表用 `content-visibility: auto`
+- 分析 stats（含「全部」）：`summarizeAnalysisBreakdown` SQL `GROUP BY`，**禁止**把整本帳本載入主執行緒再 JS 掃
+- 時間軸用 thin facts + 本機時區 bucket（避免 UTC `GROUP BY` 改語意）
+- `/analysis/print` 設 `meta.hideAppChrome`，BottomNav 不遮匯出 CTA；匯出成功後頁內「開啟檔案」
 - 收支摘要：`summarizeHomeAssetTotalsByScope` 單次 SQL（見 [Budget](/domains/budget)）
 
 ## 支出附加項目

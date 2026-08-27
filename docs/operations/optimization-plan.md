@@ -1,0 +1,49 @@
+---
+title: Optimization Plan
+---
+
+# StrawMB 全產品優化方案
+
+**版本：** 2026-08-27（對齊產品 **v1.4.0**）  
+**性質：** 官方 backlog + 驗收閘。操作細節以本 Wiki 其他頁為準，不另造流程。  
+**HTML 報告：** [優化方案 HTML](https://github.com/StrawCoding/StrawMoneyBook/blob/main/docs/audits/smb-full-product-optimization-20260827/strawmb-full-product-optimization-plan.html)
+
+權威發布站：[StrawMoneyBookWiki](https://strawcoding.github.io/StrawMoneyBookWiki/)。主 repo `docs/wiki/` 是同步來源快照。
+
+## 現況摘要
+
+- SMB-130 具名拆分（core 不再碰 Pinia／router、view 不直打 `transaction.repo`、後端 route-table）**多已落地**；[`docs/architecture-review-smb-130.md`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/docs/architecture-review-smb-130.md) 仍像實作前快照。
+- 銀行 Architecture B 程式大半完成；**第一銀行 Phase 0C 真機、華南 H1/H2 登入後 DOM 未凍**。詳見 [Sync-Architecture-B](/operations/sync-architecture-b)。
+- 分析「全部」曾把整本帳本載入主執行緒做多次 JS 聚合（P0）。
+- Play patch 預設軌道是 `internal`（[`frontend/android/play-testing-channel.json`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/frontend/android/play-testing-channel.json)）。**未拍板前不改軌道。**
+
+## 階段與驗收
+
+| 階段 | 內容 | 驗收 |
+|---|---|---|
+| 文件閘 | 本方案 + Closeout／APK／app-shell／發薪／Wear／Arch B wiki | README 索引 wiki；連結可點；不另造 SOP |
+| A 找得到 | 預算頁帳本層曆月／發薪切換；PostSetup 指向「功能→進階」；長表單 `hideAppChrome` | `playwright:budget-pay-cycle`、`playwright:ui-layout` |
+| B 分析效能 | SQL `GROUP BY`／query service，禁止分析頁全量載入 | Node test 對齊 breakdown 語意；`playwright:analysis-export` |
+| C 同步真 | 載具 configured 治本；`playwright:bank-sync` 進 CI；0C／華南為**真機閘** | CI job 存在；假陽性測試 PASS；真機見 Arch B 頁 |
+| D 金字塔 | 禁止新 `*-source.test.js`；列表虛擬化；清傳統 CSS；SMB-130 文件對齊 | 新行為用 service／Playwright／Robolectric |
+
+**排除：** iOS widget（獨立產品線）。
+
+## 發版規則（摘要）
+
+權威頁：[Closeout-And-Versioning](/operations/closeout-and-versioning)。寫碼階段**禁止**手動 bump／`gpr`。唯一發版：`cd frontend && npm run gpr`。
+
+## 相關 audit（歷史，勿當未開工）
+
+- 銀行計畫 v1.1.1：`docs/audits/bank-sync-20260816/`
+- SMB-130：`docs/architecture-review-smb-130.md`
+
+## 導覽
+
+- [Home](/operations/)
+- [Closeout-And-Versioning](/operations/closeout-and-versioning)
+- [Playwright-App-Shell](/operations/playwright-app-shell)
+- [Android-Native-Bank-APK](/operations/android-native-bank-apk)
+- [Payroll-Cycle-Budget](/operations/payroll-cycle-budget)
+- [Wear-Companion](/operations/wear-companion)
+- [Sync-Architecture-B](/operations/sync-architecture-b)

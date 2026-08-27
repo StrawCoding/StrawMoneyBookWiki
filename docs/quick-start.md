@@ -53,6 +53,7 @@ npm run check
 - [Architecture Overview](/architecture/overview) — 理解系統邊界
 - [Application Layers](/architecture/application-layers) — 分層與依賴
 - [Frontend Stack](/guide/frontend-stack) — Vue / Pinia / Store 職責
+- [Operations](/operations/) — closeout、Playwright、部署 runbook
 
 ::: tip 原始碼入口
 前端：`frontend/src/main.js`  
