@@ -11,7 +11,7 @@ export default defineConfig({
   lastUpdated: true,
   themeConfig: {
     nav: [
-      { text: 'Guide', link: '/' },
+      { text: 'Guide', link: '/guide/' },
       { text: 'Architecture', link: '/architecture/overview' },
       { text: 'Domains', link: '/domains/bookkeeping' },
       { text: 'Operations', link: '/operations/' },
@@ -22,7 +22,9 @@ export default defineConfig({
         text: 'Introduction',
         items: [
           { text: 'What is StrawMoneyBook?', link: '/' },
-          { text: 'Quick Start', link: '/quick-start' }
+          { text: 'Documentation Hub', link: '/guide/' },
+          { text: 'Quick Start', link: '/quick-start' },
+          { text: 'Open Source & License', link: '/operations/open-source-and-license' }
         ]
       },
       {

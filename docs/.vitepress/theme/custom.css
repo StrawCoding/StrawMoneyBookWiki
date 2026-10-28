@@ -2,9 +2,132 @@
   --vp-c-brand-1: #42b883;
   --vp-c-brand-2: #369a6e;
   --vp-c-brand-3: #2f855f;
+  --doc-card-bg: var(--vp-c-bg-soft);
+  --doc-card-border: var(--vp-c-divider);
+  --doc-tag-critical: #c53030;
+  --doc-tag-start: #2b6cb0;
+  --doc-tag-ops: #6b46c1;
+  --doc-tag-auth: #b7791f;
+  --doc-tag-domain: #2f855f;
+  --doc-tag-arch: #4a5568;
 }
 
 .VPDoc .content-container {
-  max-width: 860px;
+  max-width: 920px;
 }
 
+.doc-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 1.25rem 0 2rem;
+}
+
+.doc-topic {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--vp-c-text-1);
+  background: var(--doc-card-bg);
+  border: 1px solid var(--doc-card-border);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.doc-topic:hover {
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
+}
+
+.doc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+  margin: 1rem 0 2.5rem;
+}
+
+.doc-card {
+  display: block;
+  padding: 14px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  background: var(--doc-card-bg);
+  border: 1px solid var(--doc-card-border);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.doc-card:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--vp-c-brand-1) 12%, transparent);
+}
+
+.doc-card strong {
+  display: block;
+  font-size: 15px;
+  margin: 8px 0 6px;
+  color: var(--vp-c-text-1);
+}
+
+.doc-card p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--vp-c-text-2);
+}
+
+.doc-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.doc-id {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--vp-c-text-3);
+  font-family: var(--vp-font-family-mono);
+}
+
+.doc-tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.tag-critical {
+  color: var(--doc-tag-critical);
+  background: color-mix(in srgb, var(--doc-tag-critical) 14%, transparent);
+}
+
+.tag-start {
+  color: var(--doc-tag-start);
+  background: color-mix(in srgb, var(--doc-tag-start) 14%, transparent);
+}
+
+.tag-ops {
+  color: var(--doc-tag-ops);
+  background: color-mix(in srgb, var(--doc-tag-ops) 14%, transparent);
+}
+
+.tag-auth {
+  color: var(--doc-tag-auth);
+  background: color-mix(in srgb, var(--doc-tag-auth) 14%, transparent);
+}
+
+.tag-domain {
+  color: var(--doc-tag-domain);
+  background: color-mix(in srgb, var(--doc-tag-domain) 14%, transparent);
+}
+
+.tag-arch {
+  color: var(--doc-tag-arch);
+  background: color-mix(in srgb, var(--doc-tag-arch) 14%, transparent);
+}
