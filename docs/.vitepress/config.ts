@@ -7,7 +7,7 @@ export default defineConfig({
   titleTemplate: ':title | Developer Guide',
   description: 'StrawMoneyBook 官方開發者技術文件：架構、模組協作與功能域指南',
   lang: 'zh-Hant',
-  base: '/StrawMoneyBookWiki/',
+  base: '/',
   lastUpdated: true,
   themeConfig: {
     nav: [
@@ -82,7 +82,8 @@ export default defineConfig({
           { text: 'Backend Deploy', link: '/operations/backend-deployment-and-health' },
           { text: 'Backups & Restore', link: '/operations/backups-and-restore' },
           { text: 'Auth & Security', link: '/operations/auth-and-security-operations' },
-          { text: 'Troubleshooting', link: '/operations/troubleshooting' }
+          { text: 'Troubleshooting', link: '/operations/troubleshooting' },
+          { text: 'Technical Optimization', link: '/operations/technical-optimization' }
         ]
       }
     ],

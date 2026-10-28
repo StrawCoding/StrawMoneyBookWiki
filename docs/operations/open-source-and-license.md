@@ -14,7 +14,7 @@ StrawCoding 仍維運 **官方 Google Play 版**、**內部測試通道** 與 **
 |------|------|
 | 原始碼 | [github.com/StrawCoding/StrawMoneyBook](https://github.com/StrawCoding/StrawMoneyBook) |
 | 授權全文 | [LICENSE](https://github.com/StrawCoding/StrawMoneyBook/blob/main/LICENSE) |
-| 開發者 Wiki | [StrawMoneyBookWiki](https://strawcoding.github.io/StrawMoneyBookWiki/) |
+| 開發者 Wiki | [strawcoding.github.io](https://strawcoding.github.io/) |
 | 文件中心索引 | [Guide / 文件中心](/guide/) |
 
 ---

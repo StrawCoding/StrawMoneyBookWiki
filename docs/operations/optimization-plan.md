@@ -8,7 +8,7 @@ title: Optimization Plan
 **性質：** 官方 backlog + 驗收閘。操作細節以本 Wiki 其他頁為準，不另造流程。  
 **HTML 報告：** [優化方案 HTML](https://github.com/StrawCoding/StrawMoneyBook/blob/main/docs/audits/smb-full-product-optimization-20260827/strawmb-full-product-optimization-plan.html)
 
-權威發布站：[StrawMoneyBookWiki](https://strawcoding.github.io/StrawMoneyBookWiki/)。主 repo `docs/wiki/` 是同步來源快照。
+權威發布站：[strawcoding.github.io](https://strawcoding.github.io/)。主 repo `docs/wiki/` 是同步來源快照。
 
 ## 現況摘要
 
