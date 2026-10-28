@@ -6,6 +6,10 @@ title: Operations
 
 這是 StrawMoneyBook **官方技術操作 Wiki**（發布於 [`StrawMoneyBookWiki`](https://strawcoding.github.io/StrawMoneyBookWiki/) VitePress 站；來源快照在主 repo `docs/wiki/`）。維護者依固定流程完成本機開發、測試、CI、發版、Android／Play、後端部署、備份還原、同步 runbook 與故障排查。
 
+::: warning 連結格式
+所有 Operations 頁面 canonical 路徑為 **`https://strawcoding.github.io/StrawMoneyBookWiki/operations/<slug>`**（VitePress **clean URL**，通常 **不要** 加 `.html`）。若省略 `/StrawMoneyBookWiki/` 前綴，請改用 org 根站轉址或上述完整 URL。
+:::
+
 產品能力圖另見 [`StrawMoneyBook_App_Features_Detailed.md`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/StrawMoneyBook_App_Features_Detailed.md) 與 [`frontend/StrawMoneyBook_Features_Map.md`](https://github.com/StrawCoding/StrawMoneyBook/blob/main/frontend/StrawMoneyBook_Features_Map.md)。全產品優化 backlog：[Optimization-Plan](/operations/optimization-plan)。
 
 ## 快速導覽

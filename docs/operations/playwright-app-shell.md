@@ -4,6 +4,11 @@ title: Playwright App Shell
 
 # Playwright App Shell
 
+::: info 正確網址
+**Canonical：** [https://strawcoding.github.io/StrawMoneyBookWiki/operations/playwright-app-shell](https://strawcoding.github.io/StrawMoneyBookWiki/operations/playwright-app-shell)  
+勿使用缺少 `/StrawMoneyBookWiki/` 的舊連結（例如 `https://strawcoding.github.io/operations/...`）；org 根站會自動轉址，但請以 canonical 為準。
+:::
+
 ## 目的
 
 網頁／UI 驗收必須證明使用者看得到的 **實際 route + app chrome**，不是 welcome 畫面或元件單元假陽性。
