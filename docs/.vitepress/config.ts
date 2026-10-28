@@ -61,6 +61,7 @@ export default defineConfig({
         text: 'Operations',
         items: [
           { text: 'Home', link: '/operations/' },
+          { text: 'Open Source & License', link: '/operations/open-source-and-license' },
           { text: 'Optimization Plan', link: '/operations/optimization-plan' },
           { text: 'Local Dev', link: '/operations/local-dev-quickstart' },
           { text: 'Environment Variables', link: '/operations/environment-variables' },

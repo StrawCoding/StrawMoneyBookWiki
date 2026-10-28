@@ -11,6 +11,7 @@ title: Operations
 ## 快速導覽
 
 ### 開發與品質
+- [Open Source & License](/operations/open-source-and-license)
 - [Local-Dev-Quickstart](/operations/local-dev-quickstart)
 - [Environment-Variables](/operations/environment-variables)
 - [Testing-And-Verification](/operations/testing-and-verification)

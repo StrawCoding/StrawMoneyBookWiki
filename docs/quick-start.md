@@ -4,6 +4,8 @@
 
 StrawMoneyBook 是 npm monorepo：`frontend/` 為 Vue 3 + Capacitor App（本機 SQLite），`backend/` 為 Node.js 共同帳本與帳號 API。本頁只說明開發者如何快速進入程式碼，不含 CI、部署或維運流程。
 
+原始碼公開於 [GitHub](https://github.com/StrawCoding/StrawMoneyBook)，授權為 **PolyForm Noncommercial 1.0.0**（可開源協作，**禁止第三方商用**）。詳見 [Open Source & License](/operations/open-source-and-license)。
+
 ## 需求
 
 - Node.js `^20.19.0 || >=22.12.0`
